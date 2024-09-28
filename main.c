@@ -5,17 +5,17 @@
 int main()
 {
 
-	linkedlist_t *list;
-	INIT_LLIST(&list);
+	linkedlist_t list;
+	LINKEDLIST_INIT(&list);
 
 	int first = 1;
-	add(list, &first);
+	linkedlist_add(&list, &first);
 
 	int second = 3;
-	add_first(list, &second);
+	linkedlist_add_first(&list, &second);
 
-	printf("%d\n", *(int *)list->head->value);
-	printf("%d\n", *(int *)get_last(list)->value);
+	printf("%d\n", *(int *)list.head->value);
+	printf("%d\n", *(int *)linkedlist_get_last(&list)->value);
 
 	return 0;
 }

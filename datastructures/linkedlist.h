@@ -2,22 +2,22 @@ typedef struct node
 {
 	void *value;
 	struct node *next;
-} node_t;
+} linkedlist_node_t;
 
 typedef struct linkedlist
 {
 	int size;
-	node_t *head;
+	linkedlist_node_t *head;
 } linkedlist_t;
 
-void INIT_LLIST(linkedlist_t **l);
+void LINKEDLIST_INIT(linkedlist_t *l);
 
-void add(linkedlist_t *l, void *data);
+void linkedlist_add(linkedlist_t *l, void *data);
 
-void add_last(linkedlist_t *l, void *data);
+void linkedlist_add_last(linkedlist_t *l, void *data);
 
-void add_first(linkedlist_t *l, void *data);
+void linkedlist_add_first(linkedlist_t *l, void *data);
 
-// void *get(int i);
+void *linkedlist_get(linkedlist_t *l, int pos);
 
-node_t *get_last(linkedlist_t *l);
+void *linkedlist_get_last(linkedlist_t *l);

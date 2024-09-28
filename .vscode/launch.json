@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/tavin/repos/c-studies",
+      "program": "/Users/tavin/repos/c-studies/build/Debug/outDebug"
+    }
+  ]
+}
